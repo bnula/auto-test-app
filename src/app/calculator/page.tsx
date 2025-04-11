@@ -9,7 +9,7 @@ export default function CalculatorPage() {
 
   return (
     <div className="max-w-md mx-auto">
-      <h1 className="text-3xl font-bold mb-6" id="page-header">Simple Calculator</h1>
+      <h1 className="text-3xl font-bold mb-6" data-testid="page-header">Simple Calculator</h1>
       <Calculator 
         result={result}
         expression={expression}
