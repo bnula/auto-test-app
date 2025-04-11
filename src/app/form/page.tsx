@@ -14,7 +14,7 @@ export default function FormPage() {
 
   return (
     <div className="max-w-2xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6">User Registration Form</h1>
+      <h1 className="text-3xl font-bold mb-6" data-testid="page-header">User Registration Form</h1>
       
       {formSubmitted ? (
         <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6" data-testid="success-message">

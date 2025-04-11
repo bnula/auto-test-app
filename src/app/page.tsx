@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6">Selenium Testing Practice App</h1>
+      <h1 className="text-3xl font-bold mb-6" data-testid="page-header">Selenium Testing Practice App</h1>
       <p className="mb-4">
         This application is designed to help you practice automated testing with Selenium.
       </p>

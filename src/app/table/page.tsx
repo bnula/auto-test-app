@@ -29,7 +29,7 @@ export default function TablePage() {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6">User Data Table</h1>
+      <h1 className="text-3xl font-bold mb-6" data-testid="page-header">User Data Table</h1>
       
       <TableFilter 
         searchTerm={searchTerm}
