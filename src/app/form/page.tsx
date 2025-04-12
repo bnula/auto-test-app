@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { useState } from 'react';
-import UserForm from './components/UserForm';
+import { useState } from "react";
+import UserForm from "./components/UserForm"; // Assuming this component exists
 
 export default function FormPage() {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -13,11 +13,17 @@ export default function FormPage() {
   };
 
   return (
-    <div className="max-w-2xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6" data-testid="page-header">User Registration Form</h1>
-      
+    // Added p-6 for padding around the content
+    <div className="max-w-2xl mx-auto p-6">
+      <h1 className="text-3xl font-bold mb-6" data-testid="page-header">
+        User Registration Form
+      </h1>
+
       {formSubmitted ? (
-        <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6" data-testid="success-message">
+        <div
+          className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6"
+          data-testid="success-message"
+        >
           <div className="flex">
             <div>
               <p className="font-bold">Form submitted successfully!</p>
@@ -44,5 +50,5 @@ export default function FormPage() {
         <UserForm onSubmit={handleFormSubmit} />
       )}
     </div>
-  )
+  );
 }
