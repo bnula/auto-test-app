@@ -21,6 +21,7 @@ const Calculator: FC<CalculatorProps> = ({ result, expression, setResult, setExp
         setResult(evalResult.toString());
         setExpression(evalResult.toString());
       } catch (error) {
+        console.log(error);
         setResult('Error');
       }
     } else if (value === 'backspace') {

@@ -19,6 +19,7 @@ export default function TablePage() {
   const [filterRole, setFilterRole] = useState("");
 
   useEffect(() => {
+    setUsers(userData);
     let result = users;
 
     if (searchTerm) {
