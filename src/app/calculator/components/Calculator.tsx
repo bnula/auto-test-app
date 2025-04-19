@@ -51,10 +51,10 @@ const Calculator: FC<CalculatorProps> = ({ result, expression, setResult, setExp
   return (
     <div className="bg-white p-4 rounded-lg shadow">
       <div className="bg-gray-100 p-4 rounded mb-4">
-        <div className="text-gray-500 text-sm h-6" data-testid="calculator-expression">
+        <div className="text-gray-500 text-sm h-6 text-gray-700" data-testid="calculator-expression">
           {expression}
         </div>
-        <div className="text-right text-2xl font-bold" data-testid="calculator-result">
+        <div className="text-right text-2xl font-bold text-gray-700" data-testid="calculator-result">
           {result}
         </div>
       </div>
@@ -62,28 +62,28 @@ const Calculator: FC<CalculatorProps> = ({ result, expression, setResult, setExp
       <div className="grid grid-cols-4 gap-2">
         <button
           onClick={() => handleButtonClick('C')}
-          className="bg-red-500 hover:bg-red-600 text-white p-2 rounded"
+          className="bg-red-500 hover:bg-red-600 text-white p-2 rounded text-gray-700"
           data-testid="clear-button"
         >
           C
         </button>
         <button
           onClick={() => handleButtonClick('(')}
-          className="bg-gray-300 hover:bg-gray-400 p-2 rounded"
+          className="bg-gray-300 hover:bg-gray-400 p-2 rounded text-gray-700"
           data-testid="left-paren"
         >
           (
         </button>
         <button
           onClick={() => handleButtonClick(')')}
-          className="bg-gray-300 hover:bg-gray-400 p-2 rounded"
+          className="bg-gray-300 hover:bg-gray-400 p-2 rounded text-gray-700"
           data-testid="right-paren"
         >
           )
         </button>
         <button
           onClick={() => handleButtonClick('backspace')}
-          className="bg-gray-300 hover:bg-gray-400 p-2 rounded"
+          className="bg-gray-300 hover:bg-gray-400 p-2 rounded text-gray-700"
           data-testid="backspace"
         >
           ⌫
@@ -95,10 +95,10 @@ const Calculator: FC<CalculatorProps> = ({ result, expression, setResult, setExp
             onClick={() => handleButtonClick(btn)}
             className={`${
               btn === '=' 
-                ? 'bg-blue-500 hover:bg-blue-600 text-white' 
+                ? 'bg-blue-500 hover:bg-blue-600 text-white ' 
                 : ['/', '*', '-', '+'].includes(btn)
-                  ? 'bg-orange-400 hover:bg-orange-500 text-white'
-                  : 'bg-gray-200 hover:bg-gray-300'
+                  ? 'bg-orange-400 hover:bg-orange-500 text-white '
+                  : 'bg-gray-200 hover:bg-gray-300 text-gray-700'
             } p-2 rounded`}
             data-testid={`button-${btn === '.' ? 'decimal' : btn}`}
           >

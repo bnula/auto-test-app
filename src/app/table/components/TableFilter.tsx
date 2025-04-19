@@ -24,7 +24,7 @@ const TableFilter: FC<TableFilterProps> = ({
               type="text"
               id="search"
               data-testid="search-input"
-              className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md p-2 border"
+              className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md p-2 border text-gray-700"
               placeholder="Search..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
@@ -38,7 +38,7 @@ const TableFilter: FC<TableFilterProps> = ({
             <select
               id="role-filter"
               data-testid="role-filter"
-              className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md p-2 border"
+              className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md p-2 border text-gray-700"
               value={filterRole}
               onChange={(e) => setFilterRole(e.target.value)}
             >
